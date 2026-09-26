@@ -1,0 +1,81 @@
+{
+  "image": "assets/hunter.png",
+  "frameWidth": 112,
+  "frameHeight": 128,
+  "columns": 19,
+  "rows": 8,
+  "directions": [
+    "N",
+    "NW",
+    "W",
+    "SW",
+    "S",
+    "SE",
+    "E",
+    "NE"
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 2
+    },
+    "run": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fps": 10
+    },
+    "shoot": {
+      "frames": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "fps": 14,
+      "loop": false
+    },
+    "dash": {
+      "frames": [
+        13,
+        14,
+        15
+      ],
+      "fps": 16,
+      "loop": false
+    },
+    "hurt": {
+      "frames": [
+        14,
+        15
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "death": {
+      "frames": [
+        16,
+        18
+      ],
+      "fps": 5,
+      "loop": false
+    }
+  },
+  "pivot": {
+    "x": 0.5,
+    "y": 0.82
+  },
+  "recommendedDraw": {
+    "width": 42,
+    "height": 56
+  },
+  "collisionRadius": 12,
+  "notes": "Rows are mapped clockwise N,NW,W,SW,S,SE,E,NE based on the supplied sheet. Animation columns are inferred from pose groups."
+}
